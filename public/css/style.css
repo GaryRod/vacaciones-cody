@@ -1,31 +1,158 @@
-nav{
-  background-color: aliceblue;
+main{
+  text-align: center;
+  margin:0 auto;
+  max-width: 1200px;
+  background: linear-gradient(to bottom, #00ccff 15%, #3399ff 68%);
+  color: white;
+  overflow-x: hidden;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Sección uno */
+.cont-inicio{
+  background-image: url(../images/fondo-header-pc.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  max-height: 800px;
+  display: flex;
+}
+
+.cont-inicio__capa{
+  background-color: rgba(0, 63, 92, 0.4);
+  width: 50vw;
+  color: #fff;
+}
+
+.cont-inicio__nav{
   padding: 15px;
   display: flex;
   gap:1em;
+  justify-content: flex-end;
 }
 
-main{
-  text-align: center;
-  max-width: 960px;
-  margin:0 auto;
+.cont-inicio__links{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  width: 50px;
+  font-size: 1.2rem;
 }
 
-section{
-  margin-top: 3rem;
+.cont-inicio__links:hover{
+  color: rgb(179, 31, 31);
 }
 
-.cursos div{
-  background-color: black;
+.parrafo{
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+/* Separaciiones de sección */
+.cont-separacion{
+  position: relative;
+  height: 80px;
+  width: 100%;
+}
+.cody{
+  position: absolute;
+  left: -100px;
+  bottom: 0;
+  width: 100px; 
+  animation-name: codi;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.cody-rev{
+  position: absolute;
+  left: -100px;
+  bottom: 0;
+  width: 100px; 
+  animation-name: codi;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+@keyframes codi{
+  0%{
+    transform: translate(0, 0);
+  }
+  100%{
+    transform: translate(109vw, 0);
+  }
+}
+
+/* Sección dos */
+.cont-aprender{
+  display: flex;
+  height: 100vh;
+  max-height: 800px;
+  background-color: rgba(0, 63, 92, 0.4);
+  flex-wrap:wrap ;
+  flex-direction: column;
+}
+
+.cont-aprender__vacas{
+  border-right: solid 2px black;
+  flex: 1.5;
+}
+.cont-aprender__ruta{
+  flex: 1;
+}
+
+.cursos__realizados{
+  background-color: rgb(179, 31, 31);
   color: white;
   max-width: 200px;
   display: inline-block;
   box-shadow: 5px 5px 10px black;
+  border-radius: 20px;
 }
-.fotos img{
+
+/* Sección tres */
+.cont-colab{
+  background-color: rgba(0, 63, 92, 0.4);
+  border: solid 2px;
+}
+
+.cont-slider{
+  display: flex;
   max-width: 450px;
-  display: inline-block;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  border-radius: 5px;
+  
 }
+
+.cont-slider__imagenes{
+  width: 100%;
+  object-fit: cover;
+  scroll-snap-align: center;
+}
+
+.cont-slider::-webkit-scrollbar{
+  height: 10px;
+}
+
+.cont-slider::-webkit-scrollbar-thumb{
+  background: rgb(12, 145, 138);
+  border-radius: 5px;
+}
+
+.cont-slider::-webkit-scrollbar-track{
+  background: rgb(10, 73, 92);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 ul li{
   text-align: left;
 }
@@ -35,4 +162,25 @@ ul li::marker {
 
 ol li{
   text-align: left;
+}
+
+/* Media Queries */
+@media screen and (max-width: 780px){
+  .cont-inicio{
+    background-image: url(../images/fondo-header-tablet.jpg);
+  }
+
+    .parrafo{
+      font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+  .cont-inicio{
+    background-image: url(../images/fondo-header-mobile.jpg);
+  }
+
+  .parrafo{
+    font-size: 0.75rem;
+  }
 }
