@@ -93,8 +93,8 @@ main{
   height: 100vh;
   max-height: 800px;
   background-color: rgba(0, 63, 92, 0.4);
-  flex-wrap:wrap ;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: 
 }
 
 .cont-aprender__vacas{
@@ -171,7 +171,7 @@ ol li{
   }
 
     .parrafo{
-      font-size: .9rem;
+      font-size: 1.1rem;
     }
 }
 
@@ -180,7 +180,22 @@ ol li{
     background-image: url(../images/fondo-header-mobile.jpg);
   }
 
+  .wave{
+    display: none;
+  }
+
+  .cont-inicio__capa{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+  }
+
+  .cont-aprender{
+    flex-direction: column;
+  }
+
   .parrafo{
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }
