@@ -302,4 +302,8 @@ ol li{
   .cont-colab-comp{
     flex-direction: column;
   }
+
+  .cont-colab{
+    border-bottom: solid 2px rgba(0, 63, 92, 0.4);
+  }
 }
