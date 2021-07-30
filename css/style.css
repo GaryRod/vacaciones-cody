@@ -259,7 +259,7 @@ ol li{
 /* Media Queries */
 @media screen and (max-width: 780px){
   .cont-inicio{
-    background-image: url(../images/fondo-header-tablet.jpg);
+    background-position: -40px 0px;
   }
 
     .parrafo{
@@ -269,8 +269,8 @@ ol li{
 
 @media screen and (max-width: 480px){
   .cont-inicio{
-    background-image: url(../images/fondo-header-mobile.jpg);
     flex-direction: column;
+    background-position: -90px 0px;
   }
 
   .cont-inicio__capa{
