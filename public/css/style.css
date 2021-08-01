@@ -86,22 +86,19 @@ main{
 /* Sección dos */
 .cont-aprender{
   display: flex;
+  background-color: rgba(0, 63, 92, 0.4);
+  border-bottom: solid 2px rgba(0, 63, 92, 0.4);
+  border-top: solid 2px rgba(0, 63, 92, 0.4);
 }
 
 .cont-aprender__vacas{
-  background-color: rgba(0, 63, 92, 0.4);
   border-right: solid 2px rgba(0, 63, 92, 0.4);
-  border-bottom: solid 2px rgba(0, 63, 92, 0.4);
-  border-top: solid 2px rgba(0, 63, 92, 0.4);
   padding: 0 10px;
   flex: 2;
 }
 
 .cont-aprender__ruta{
-  background-color: rgba(0, 63, 92, 0.4);
   flex: 1;
-  border-bottom: solid 2px rgba(0, 63, 92, 0.4);
-    border-top: solid 2px rgba(0, 63, 92, 0.4);
 }
 
 .cursos__realizados{
@@ -127,21 +124,18 @@ ul li::marker {
 .cont-colab-comp{
   display: flex;
   flex-direction: row-reverse;
+  border-bottom: solid 2px rgba(0, 63, 92, 0.4);
+  border-top: solid 2px rgba(0, 63, 92, 0.4);
+  background-color: rgba(0, 63, 92, 0.4);
 }
 
 .cont__colab{
-  background-color: rgba(0, 63, 92, 0.4);
   padding: 0 10px;
   flex: 1;
-  border-bottom: solid 2px rgba(0, 63, 92, 0.4);
-  border-top: solid 2px rgba(0, 63, 92, 0.4);
 }
 
 .cont__comp{
-  background-color: rgba(0, 63, 92, 0.4);
   border-right: solid 2px rgba(0, 63, 92, 0.4);
-  border-bottom: solid 2px rgba(0, 63, 92, 0.4);
-  border-top: solid 2px rgba(0, 63, 92, 0.4);
   padding: 0 10px;
   flex: 2.5;
 }
@@ -199,6 +193,7 @@ ul li::marker {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
+  text-decoration: underline;
 }
 
 .lista__img{
@@ -286,6 +281,9 @@ ul li::marker {
   opacity: 1;
 }
 
+.subtitulo{
+  text-shadow: -2px -1px 15px white;
+}
 /* Media Queries */
 @media screen and (max-width: 780px){
   .cont-inicio{
@@ -298,6 +296,7 @@ ul li::marker {
 }
 
 @media screen and (max-width: 480px){
+  /* Sección uno */
   .cont-inicio{
     flex-direction: column;
     background-position: -90px 0px;
@@ -316,12 +315,14 @@ ul li::marker {
     display: block;
   }
 
+  /* Sección dos */
   .cont-aprender{
     flex-direction: column;
   }
 
   .cont-aprender__vacas{
     border-right: transparent;
+    border-bottom: solid 2px rgba(0, 63, 92, 0.4);
   }
 
   .cont-aprender__ruta{
@@ -332,17 +333,15 @@ ul li::marker {
     font-size: 1rem;
   }
 
+  /* Sección tres */
   .cont-colab-comp{
     flex-direction: column;
-    
   }
-
+  
   .cont__comp{
   }
-
+  
   .cont__colab{
-  }
-
-  .lista{
+    border-bottom: solid 2px rgba(0, 63, 92, 0.4);
   }
 }
