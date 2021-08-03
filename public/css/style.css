@@ -108,11 +108,12 @@ body::-webkit-scrollbar-track{
   margin-right: 10px;
 }
 
-ul li{
+.lista-uno__items{
   text-align: left;
+  margin-bottom: 5px;
 }
 
-ul li::marker {
+.lista-uno__items::marker {
   content: "🚀";
 }
 
@@ -175,13 +176,13 @@ ul li::marker {
   margin-bottom: 0;
 }
 
-.lista{
+.lista-dos{
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
 
-.lista__item{
+.lista-dos__item{
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -189,14 +190,14 @@ ul li::marker {
   text-decoration: underline;
 }
 
-.lista__img{
+.lista-dos__img{
   border-radius: 5px;
   margin-top: 10px;
   cursor: pointer;
   transition: all 1s;
 }
 
-.lista__img:hover{
+.lista-dos__img:hover{
   transform: scale(1.1,1.1);
 }
 
@@ -281,18 +282,23 @@ ul li::marker {
   opacity: 1;
 }
 
-/* Texto */
+/* Textos */
 .titulo{
   margin: 60px 0;
 }
 
-.titulo, .subtitulo{
-  text-shadow: -2px -1px 15px white;
+.titulo, .subtitulo, .parrafo--inicio{
+  text-shadow: -2px -1px 15px rgb(255, 255, 255);
 }
 
 .parrafo{
   font-size: 1.2rem;
   padding: 0 10px;
+}
+
+.links{
+  color:rgb(0, 0, 0);
+  text-shadow: -2px -1px 15px rgb(255, 255, 255);
 }
 
 /* Volver */
@@ -319,8 +325,8 @@ ul li::marker {
     background-position: -40px 0;
   }
 
-    .parrafo{
-      font-size: 1.1rem;
+  .parrafo{
+    font-size: 1.1rem;
   }
 }
 
@@ -358,10 +364,6 @@ ul li::marker {
     border-bottom: solid 2px rgba(0, 63, 92, 0.4);
   }
 
-  .cont-aprender__ruta{
-  
-  }
-
   .parrafo{
     font-size: 1rem;
   }
@@ -369,9 +371,6 @@ ul li::marker {
   /* Sección tres */
   .cont-colab-comp{
     flex-direction: column;
-  }
-  
-  .cont__comp{
   }
   
   .cont__colab{
