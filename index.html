@@ -6,9 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <title>Mis vacaciones</title>
 </head>
 <body>
+  <div class="carga" id="carga"> 
+    <div class="loader"></div>
+  </div>
   <main class="main">
     <header class="cont-inicio" id="inicio">
       <div class="cont-inicio__capa">
@@ -16,7 +20,7 @@
           <a href="index.html" class="cont-inicio__links">Inicio</a>
           <a href="fotos.html" class="cont-inicio__links">Fotos</a>
         </nav>
-        <h1 class="titulo">Estas son mis Vacaciones</h1>
+        <h1 class="titulo" id="titulo">Estas son mis Vacaciones</h1>
         <p class="parrafo parrafo--inicio">Soy Cody, un aspirante a Dev, en 2019, organicé un viaje para desestresarme del código, y en esta página quiero compartirlo contigo.</p>
       </div>
       <div class="wave" style="height: 100%; width: 50%; overflow: hidden;" >
@@ -50,7 +54,7 @@
 
       <section class="cont-aprender__ruta">
         <header>
-          <h2 class="subtitulo">Ruta de aprendizaje 2021</h2>
+          <h2 class="subtitulo" id="subtitulo">Ruta de aprendizaje 2021</h2>
           <p class="parrafo"> También me propuse aprender nuevas tecnologías durante 2021</p>
         </header>
         <ul class="lista-uno">
@@ -137,5 +141,8 @@
     </div>
     
   </main>
+
+  <!-- <script src="index.js"></script> -->
+  <script src="cody.js"></script>
 </body>
 </html>
